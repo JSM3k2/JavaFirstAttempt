@@ -1,11 +1,30 @@
-public class CreditCard {
-    private long credit_number;
-    private String name;
+public class CreditCard
+{
+    private String credit_number;
 
-    public CreditCard(long credit_number, String name)
+    public CreditCard()
     {
-        this.credit_number = credit_number;
-        this.name = name;
+
     }
 
+    public CreditCard(String credit_number)
+    {
+        this.credit_number = credit_number;
+    }
+
+    public String getCredit_number()
+    {
+        return credit_number;
+    }
+
+    public void setCredit_number(String credit_number)
+    {
+        this.credit_number = credit_number;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "CreditCard{" + " credit_number = " + credit_number + '}';
+    }
 }
